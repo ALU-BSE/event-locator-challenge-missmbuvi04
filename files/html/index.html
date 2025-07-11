@@ -25,9 +25,9 @@
       <div class="col-md-3">
         <select id="categoryFilter" class="form-select">
           <option value="">All Categories</option>
-          <option value="Music">Music</option>
+          <!-- <option value="Music">Music</option>
           <option value="Art">Art</option>
-          <option value="Tech">Tech</option>
+          <option value="Tech">Tech</option> -->
         </select>
       </div>
       <div class="col-md-2 d-grid">
@@ -37,18 +37,7 @@
   </div>
 
   <!-- Inline JavaScript -->
-  <script>
-    document.getElementById("searchForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const query = document.getElementById("searchInput").value;
-      const date = document.getElementById("dateFilter").value;
-      const category = document.getElementById("categoryFilter").value;
-
-      const searchFilters = { query, date, category };
-      localStorage.setItem("searchFilters", JSON.stringify(searchFilters));
-
-      window.location.href = "events.html";
-    });
-  </script>
+  
+    <script src="../js/main.js"></script>
 </body>
 </html>
