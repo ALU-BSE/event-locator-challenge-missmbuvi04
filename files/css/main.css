@@ -1,33 +1,38 @@
 /* css/styles.css */
 
-/* Colors */
 :root {
   --hot-pink: #ff69b4;
   --light-purple: #cdb4db;
   --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.08);
 }
 
 body {
-  background-color: var(--light-purple);
+  background: linear-gradient(135deg, var(--light-purple), var(--hot-pink));
+  min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Gradient Header Text */
 .gradient-text {
-  background: linear-gradient(90deg, var(--hot-pink), var(--light-purple));
+  background: linear-gradient(90deg, var(--hot-pink), var(--white));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Form Card Styling */
+/* Stylish Form Card */
 .form-card {
   background-color: var(--white);
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 2px solid var(--light-purple);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px var(--shadow);
   max-width: 900px;
+  margin-top: 30px;
 }
 
 /* Cute Button */
@@ -36,6 +41,7 @@ body {
   color: var(--white);
   font-weight: bold;
   transition: background-color 0.3s ease;
+  border: none;
 }
 .btn-custom:hover {
   background-color: #ff85c1;
@@ -48,4 +54,6 @@ body {
   color: var(--white);
   font-weight: 500;
   font-size: 0.95rem;
+  margin-top: auto;
+  padding: 1rem 0;
 }
