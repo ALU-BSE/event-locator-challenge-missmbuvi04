@@ -1,0 +1,51 @@
+/* css/styles.css */
+
+/* Colors */
+:root {
+  --hot-pink: #ff69b4;
+  --light-purple: #cdb4db;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--light-purple);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gradient Header Text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--hot-pink), var(--light-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form Card Styling */
+.form-card {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+/* Cute Button */
+.btn-custom {
+  background-color: var(--hot-pink);
+  color: var(--white);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #ff85c1;
+  color: var(--white);
+}
+
+/* Footer */
+.custom-footer {
+  background-color: var(--hot-pink);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
